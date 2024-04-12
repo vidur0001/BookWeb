@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bookish_trade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bookish trader 001</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bolder  pt-5 pb-4" id="naav">
+        <div class="container-xxl ">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="#intro">
+                <span id="bookish-trade" class="text-secondary  display-6 fw-bold text-white">
+                    Bookish Trade
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav fs-4 bolder fw-normal fst-italic  navigation">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#topics">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Revws</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Buy</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#search">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Get in Touch</a>
+                    </li>
+
+                </ul>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary" href="bookish_login.html">Log in</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- about us -->
+    <section id="intro">
+        <!-- login -->
+        <!-- <div class="login">
+            <h1 class="main-login">Login</h1>
+            <div class="user-name"> 
+                <p>
+                    Enter Name
+                </p>
+                <input type="text" placeholder="enter your name">
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+            </div>
+            <div class="password">
+                <p>
+                    Enter password
+                </p>
+                <input type="text" placeholder="enter password">
+                <i class="fa-solid fa-lock" style="color: #000000;"></i>
+            </div>
+            <div class="login-btn">
+                <button>
+                    login
+                </button>
+                <button>sign in </button>
+            </div>
+        </div> -->
+
+        <!-- login end -->
+        <div class=" ">
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-3">Welcome to Bookish Trade,</div>
+                        <div class="display-6 text-muted">your ultimate destination for buying, selling and trading
+                            books online.
+                        </div>
+                    </h1>
+                   
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Explore</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- <script src="https://3dbook.xyz/api/books/65d4fc5686764f0051233c6e/cover.js"></script> -->
+
+
+                    <!-- <img src="3dimgbook.png" class="img-fluid secondary" alt="ebook"> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="custom-shape-divider-bottom-1707502886">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div> -->
+    </section>
+
+
+
+    <!-- search bar -->
+    <section>
+        <div class="searchbar" id="search">
+            <ul>
+                <form class="d-flex m-5" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-outline-success" id="searchBtn" type="submit">Search</button>
+                </form>
+            </ul>
+        </div>
+    </section>
+    <section id="bookDisplay">
+
+        <!-- book which you will search will be display here -->
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- img under search bar -->
+    <section>
+        <div class="img-under-searchbar col-12 ">
+            <a href="all_book_collection.html">
+                <img src="images/1.png" alt="first book-poster">
+            </a>
+            <img src="/images/2.png" alt="first book-poster">
+            <a href="all_book_collection.html">
+            <img src="images/3.png" alt="first book-poster">
+        </a>
+            <img src="/images/4.png" alt="first book-poster">
+            <img src="/images/5.png" alt="first book-poster">
+            <img src="/images/6.png" alt="first book-poster">
+            <img src="/images/7.png" alt="first book-poster">
+            <img src="/images/8.png" alt="first book-poster">
+            <img src="/images/9.png" alt="first book-poster">
+            <img src="/images/10.png" alt="first book-poster">
+            <img src="/images/11.png" alt="first book-poster">
+            <img src="/images/12.png" alt="first book-poster">
+            <button class="btn btn-secondary  book-img-btn">
+                <a href="#search"> many more >></a>
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light review-column">
+        <div class="container-lg review-column">
+            <div class="text-center">
+                <h2>Website Reviews</h2>
+                <p class="lead">What our user have said about us...</p>
+            </div>
+
+            <div class="row justify-content-center my-5 ">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1">this is one of the best website... </h5>
+                            <p class="mb-1">It help us find the book we want to buy at a very low price and we can also
+                                sell our book here.
+                                <br>by - sam smith
+
+                                </small>
+
+
+                        </div>
+
+
+                    </div>
+                    <button class=" btn btn-secondary review-btn">Read more</button>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- contact  -->
+    <section id="contact">
+        <div class="container-lg">
+
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+
+                    <form>
+                        <label for="email" class="form-label">Email address:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                        </div>
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                        </div>
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+                        <div class="mb-4 mt-5 form-floating">
+                            <textarea class="form-control" id="query" style="height: 140px"
+                                placeholder="query"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ribbon -->
+
+    <section>
+        <div class="ribbon">
+            <div class="ribbon-main">
+                <i class="fa-solid fa-truck" style="color: #000000;"></i>
+                                 <h3>
+                    Free Delivery
+                </h3>
+            </div>
+            <div class="ribbon-main">
+                <i class="fa-solid fa-sack-dollar" style="color: #000000;"></i>
+                <h3>
+                    Cash on Delivery
+                </h3>
+            </div>
+            <div class="ribbon-main">
+                <i class="fa-regular fa-circle-check" style="color: #000000;"></i>
+                <h3>
+                    Original Product
+                </h3>
+            </div>
+            <div class="ribbon-main">
+                <i class="fa-solid fa-people-pulling" style="color: #000000;"></i>
+                                <h3>
+                    Easy Replacement
+                </h3>
+            </div>
+        </div>
+
+    </section>
+    <!-- ribbon-end -->
+    <!-- tag list start -->
+    <div class="scroller">
+        <marquee behavior="" direction="">
+        <ul class="tag-list scroller_inner">
+            <li>Sale upto 50% off </li>
+            <li> Amazing Discount </li>
+            <li> Exciting Coupon</li>
+            <li> Best Price</li>
+           
+        </ul></marquee>
+    </div>
+    <!-- tag list end -->
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-first">
+                <h1>Bookish Trade</h1>
+                <p class="footer-para1">
+                    Ever wanted to buy a book but could not because it was too expensive? worry not! because Bookchor is
+                    here! Bookchor, these days in news,is being called as the Robinhood of the world of books.
+                </p>
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+
+            </div>
+            <div class="footer-second">
+                <h3>Our Links</h3>
+
+                <ul>
+                    <li><a href="#"> </a>about us</li>
+                    <li><a href="#"> </a>contact us</li>
+                    <li><a href="#"></a>sell with us</li>
+                    <li><a href="#"></a>wholesale </li>
+                    <li><a href="#"></a>blogs </li>
+
+
+                </ul>
+
+            </div>
+            <div class="footer-third">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"></a>Track order </li>
+                    <li><a href="#"> </a>FAQs</li>
+                    <li><a href="#"></a>Private policy</li>
+                    <li><a href="#"></a>Term & Condition </li>
+
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>Support</h3>
+                <div class="support-contact">
+
+                    <p>
+                        <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                        call : 1800 456 303
+                    </p>
+                </div>
+                <div class="support-contact2">
+                    <p>
+                        <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+                        email : bookishtrade@gmail.com
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- slider blog start -->
+    
+
+
+
+    <!-- slider blog end -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        src="bookish_js.js"></script>
+
+<script>
+        document.getElementById('searchBtn').addEventListener('click', function () {
+            const searchInput = document.getElementById('searchInput').value;
+            fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    displayBooks(data.items);
+                })
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                });
+        });
+
+        function displayBooks(books) {
+            const bookDisplaySection = document.getElementById('bookDisplay');
+            bookDisplaySection.innerHTML = ''; // Clear previous content
+            books.forEach(book => {
+                const title = book.volumeInfo.title;
+                const authors = book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown Author';
+                const description = book.volumeInfo.description ? book.volumeInfo.description : 'No description available';
+                const thumbnail = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/150';
+                const bookElement = `
+                    <div>
+                        <img src="${thumbnail}" alt="Book cover" style="width: 400px; height: 400px;">
+                        <h4>${title}</h4>
+                        <p>By ${authors}</p>
+        
+                    </div>
+                `;
+                bookDisplaySection.innerHTML += bookElement;
+            });
+        }
+
+        // Prevent form submission
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
+</script>
+</body>
+
+</html>

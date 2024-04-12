@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: white; 
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  
+  align-items: stretch; /* Add this line to stretch items vertically */
+}
+
+.column {
+  flex: 0 0 calc(30% - 30px);
+  max-width: calc(25% - 10px);
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: .2s ease-out;
+}
+
+
+.card {
+  background: black;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-out;
+  display: flex; /* Ensure child elements also stretch vertically */
+  flex-direction: column; /* Ensure child elements also stretch vertically */
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(86, 83, 83, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 20px;
+  
+}
+
+.card-content {
+  padding: 5px;
+  flex: 1; /* Allow content to stretch and fill available space */
+  width: 95%;
+}
+
+.card-content h3 {
+  font-size: smaller;
+  margin: 10px 0;
+}
+
+.card-content .description {
+  font-size: 1rem;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.card-content .price {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+
+
+/* nav bar in  */
+#naav {
+  /* background: linear-gradient(130deg,rgb(79, 28, 137),rgb(162, 165, 147)); */
+  background-color: rgb(143, 93, 200);
+  overflow-y:hidden ;
+  margin-bottom: 30px;
+
+
+
+
+
+}
+.img-under-searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 100vh; */
+  width: 100%;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  /* justify-content: center; */
+
+
+}
+
+.img-under-searchbar>img:hover {
+  padding: 1px;
+  transition: .2s ease-in-out;
+}
+
+.img-under-searchbar img {
+  height: 400px;
+  width: 250px;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 6px solid rgb(79, 28, 137);
+  cursor: pointer;
+  /* position: absolute; */
+
+}
+
+.navigation a {
+  /* font-size: 1.8rem; */
+  /* color: rgb(0, 0, 0); */
+
+  position: relative;
+  text-decoration: none;
+  list-style:none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 20px;
+  color: rgb(255, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  transform-origin: right;
+  background: rgb(255, 250, 250);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+
+.navigation a:hover {
+  padding: 1px;
+  transition: .5s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+
+/* search-bar */
+/* input .search-bar{
+  outline: 10px;
+  color: purple;
+} */
